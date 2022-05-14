@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php the_title(); ?></title>
 </head>
-
+<?php get_header("header.php"); ?>
 <body>
     <div class="container_5">
-        <?php get_header("header.php"); ?>
+        
         <div class="container_text">
             <h1><?php the_title(); ?></h1>
             <?php the_content(); ?>
@@ -22,7 +22,7 @@
         <img src="<?php echo(get_post_meta(get_the_ID(), $key = 'image4', $single = true)); ?>" alt="">
         </div>
     </div>
-</body>
 <?php get_footer("footer.php"); ?>
+</body>
 
 </html>
