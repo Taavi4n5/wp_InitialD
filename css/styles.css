@@ -3,12 +3,11 @@
 }
 
 body {
-    background-image: url('pictures/background.jpg');
-    background-repeat: no-repeat;
-    background-color: black;
+    background-color: lightgreen;
     padding: 1rem;
     z-index: -1;
 }
+
 
 h1,
 p,
@@ -45,11 +44,6 @@ a:hover {
     text-align: center;
 }
 
-.warning {
-    font-size: larger;
-    color: red;
-}
-
 .container_page {
     margin: auto;
     text-align: center;
@@ -58,7 +52,7 @@ a:hover {
 .container_header,
 .container_intro {
     background-color: rgba(0, 0, 0, 0.8);
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 50px;
 }
 
@@ -76,7 +70,7 @@ a:hover {
 
 .container_content {
     margin: auto;
-    width: 60vw;
+    width: 75%;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -87,9 +81,6 @@ a:hover {
 .container_1 {
     height: 300px;
     width: 300px;
-    justify-content: center;
-    display: inline-block;
-    position: relative;
 }
 
 .hover_overlay {
@@ -175,10 +166,12 @@ a {
 }
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     margin: auto;
     width: 95%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
 }
 
 
